@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 //presentational component
 
 export default class DogsList extends Component {
-  renderDogBreed(breed) {
+  renderDogBreed(breedName) {
     return (
-      <li key={breed}>
-        <Link to={`/dog-breeds/${breed}`}>{breed}</Link>
+      <li key={breedName}>
+        <Link to={`/dog-breeds/${breedName}`}>{breedName}</Link>
       </li>
     );
   }

@@ -22,6 +22,7 @@ export default class DogsListContainer extends Component {
   }
 
   render() {
+    console.log(this.props);
     return <DogsList dogBreeds={this.state.dogBreeds} />;
   }
 }

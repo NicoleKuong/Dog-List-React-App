@@ -4,6 +4,8 @@ export default class DogBreedImagesContainer extends Component {
   state = {
     images: null
   };
+
+  //DogBreedImagesContainer
   componentDidMount() {
     const breed = this.props.match.params.breed;
     // encodeURIComponent: When creating URIs in code using string
@@ -24,7 +26,10 @@ export default class DogBreedImagesContainer extends Component {
     });
   }
   render() {
+    console.log(this.props);
+    // this props comes from the route
     const { breed } = this.props.match.params;
+    //get the params in the props and the dog breed
     return <DogBreedImages breed={breed} images={this.state.images} />;
   }
 }
